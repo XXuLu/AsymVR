@@ -7,11 +7,8 @@ public class PcGaze : MonoBehaviour
 {
     
     public GameObject markPrefab; // Assign a small sphere prefab to simulate the mark
-
-    private void Start()
-    {
-       
-    }
+    
+    
     void Update()
     {
        
@@ -26,4 +23,6 @@ public class PcGaze : MonoBehaviour
             }
         
     }
+
+   
 }
