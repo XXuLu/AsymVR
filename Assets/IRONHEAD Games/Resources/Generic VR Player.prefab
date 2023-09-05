@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a974fdf9c4b5ab4a81a2eeca2ff6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalXRRigGameobject: {fileID: 8616775373487327726}
+  LocalXRRigGameobject: {fileID: 5672432331309122821}
   MainAvatarGameobject: {fileID: 7275818262122506117}
   AvatarHeadGameobject: {fileID: 4827671263800390202}
   AvatarBodyGameobject: {fileID: 4950425104766526697}
@@ -2799,7 +2799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6095380171701094546
 Transform:
   m_ObjectHideFlags: 0
@@ -3509,6 +3509,11 @@ PrefabInstance:
       addedObject: {fileID: 2521970042436535350}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!1 &5672432331309122821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 6444617757787319080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5672432331309122822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -3522,6 +3527,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5672432331309122822}
     m_Modifications:
+    - target: {fileID: 6598815579406187026, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_MouseXRotateSensitivity
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187026, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_MouseYRotateSensitivity
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3568,7 +3581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
