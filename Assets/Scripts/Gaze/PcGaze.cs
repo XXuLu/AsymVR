@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PcGaze : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PcGaze : MonoBehaviour
             if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.layer == 12)
             {
                 // Instantiate the mark at the intersection point
-                Instantiate(markPrefab, hit.point, Quaternion.identity);
+                PhotonNetwork.Instantiate("gazeDot", hit.point, Quaternion.identity);
             }
         
     }
