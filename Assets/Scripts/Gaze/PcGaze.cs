@@ -19,7 +19,7 @@ public class PcGaze : MonoBehaviour
             if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.layer == 12)
             {
                 // Instantiate the mark at the intersection point
-                PhotonNetwork.Instantiate("gazeDot", hit.point, Quaternion.identity);
+                PhotonNetwork.Instantiate("TeacherGazeDot", hit.point, Quaternion.identity);
             }
         
     }

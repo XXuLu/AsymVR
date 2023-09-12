@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 872069698742296774}
   - component: {fileID: 6822690998232664207}
   m_Layer: 0
-  m_Name: gazeDot
+  m_Name: TeacherGazeDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
