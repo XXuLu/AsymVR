@@ -19,8 +19,8 @@ public class GazeTrail : MonoBehaviour
 
         if (SRanipal_Eye_v2.Focus(GazeIndex.COMBINE, out Ray VRray, out FocusInfo  focusInfo) )
         {
-            Vector3 newPosition = VRray.GetPoint(distance);
-            transform.position = newPosition + offset;
+            Vector3 newVRPosition = VRray.GetPoint(distance);
+            transform.position = newVRPosition + offset;
         }
         else
         {

@@ -84,7 +84,8 @@ PrefabInstance:
       propertyPath: micImage
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4370708616356752697, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8616775373487327726, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
     - {fileID: 2521970042436535352, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
