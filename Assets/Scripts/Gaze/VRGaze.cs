@@ -8,6 +8,7 @@ public class VRGaze : MonoBehaviour
 {
     private Vector3 gazePoint;
     
+    
     private void Update()
     {
         
@@ -18,7 +19,8 @@ public class VRGaze : MonoBehaviour
             
             
                 gazePoint = focusInfo.point;
-                PhotonNetwork.Instantiate("gazeDot", gazePoint, Quaternion.identity);
+                PhotonNetwork.Instantiate("GazeTrail", gazePoint, Quaternion.identity);
+                
 
             
         }
