@@ -5,7 +5,7 @@ using ViveSR.anipal.Eye;
 
 public class GazeTrail : MonoBehaviour
 {
-    public float distance = 10f;
+    public float distance = 5f;
     public Vector3 offset = Vector3.zero;
 
     private void Start()
