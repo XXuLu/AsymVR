@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using ViveSR.anipal.Eye;
+using Photon.Pun;
 
 public class GazeTrail : MonoBehaviourPunCallbacks
 {
@@ -12,6 +13,14 @@ public class GazeTrail : MonoBehaviourPunCallbacks
 
     private static EyeData_v2 eyeData = new EyeData_v2();
     private bool eye_callback_registered = false;
+
+    private PhotonView photonView;
+
+
+    private void Awake()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
     private void Start()
     {
         Cursor.visible = false;
@@ -20,14 +29,15 @@ public class GazeTrail : MonoBehaviourPunCallbacks
             enabled = false;
             return;
         }
-        
+
+
     }
 
    
     // Update is called once per frame
     void Update()
     {
-        if (SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.WORKING && SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.NOT_SUPPORT)
+        if (photonView.IsMine&SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.WORKING && SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.NOT_SUPPORT)
 
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -41,7 +51,7 @@ public class GazeTrail : MonoBehaviourPunCallbacks
             SRanipal_Eye_v2.WrapperRegisterEyeDataCallback(Marshal.GetFunctionPointerForDelegate((SRanipal_Eye_v2.CallbackBasic)EyeCallback));
             eye_callback_registered = true;
         }
-        else if (SRanipal_Eye_Framework.Instance.EnableEyeDataCallback == false && eye_callback_registered == true)
+        else if (photonView.IsMine & SRanipal_Eye_Framework.Instance.EnableEyeDataCallback == false && eye_callback_registered == true)
         {
             SRanipal_Eye_v2.WrapperUnRegisterEyeDataCallback(Marshal.GetFunctionPointerForDelegate((SRanipal_Eye_v2.CallbackBasic)EyeCallback));
             eye_callback_registered = false;
