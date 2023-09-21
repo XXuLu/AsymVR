@@ -4892,7 +4892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 5
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: -1, y: 1, z: 0}
 --- !u!114 &9166583557543852420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4913,6 +4913,7 @@ MonoBehaviour:
   observableSearch: 0
   ObservedComponents:
   - {fileID: 7618976552684379504}
+  - {fileID: 2071148712413436456}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
