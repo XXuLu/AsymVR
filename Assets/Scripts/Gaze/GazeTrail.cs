@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -43,7 +44,9 @@ public class GazeTrail : MonoBehaviourPunCallbacks
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 newPos = ray.GetPoint(distance);
             transform.position = newPos + offset;
+            SetGazeColor(Color.red);
             return;
+            
         }
 
         if (SRanipal_Eye_Framework.Instance.EnableEyeDataCallback == true && eye_callback_registered == false)
@@ -59,9 +62,11 @@ public class GazeTrail : MonoBehaviourPunCallbacks
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 newPosition = ray.GetPoint(distance);
             transform.position = newPosition + offset;
+
             
-               
-      
+
+
+
         }
 
         Vector3 GazeOriginCombinedLocal, GazeDirectionCombinedLocal;
@@ -86,6 +91,19 @@ public class GazeTrail : MonoBehaviourPunCallbacks
 
 
 
+    }
+
+    public void SetGazeColor(Color newColor)
+    {
+        // 获取此物体及其所有子物体的所有粒子系统
+        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+
+        // 遍历每个粒子系统
+        foreach (ParticleSystem ps in particleSystems)
+        {
+            var mainModule = ps.main;
+            mainModule.startColor = newColor; // 设置粒子系统的颜色
+        }
     }
 
     private void Release()
