@@ -4851,6 +4851,8 @@ GameObject:
   - component: {fileID: 5768986129538828679}
   - component: {fileID: 3832626006077397960}
   - component: {fileID: 9166583557543852420}
+  - component: {fileID: 7618976552684379504}
+  - component: {fileID: 791805088697562228}
   m_Layer: 0
   m_Name: GazeTrail
   m_TagString: Untagged
@@ -4907,11 +4909,40 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7618976552684379504}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7618976552684379504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768986129538828678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &791805088697562228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768986129538828678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1dc8a982d99a24887f45b7f6587671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5768986129761163588
 GameObject:
   m_ObjectHideFlags: 0
