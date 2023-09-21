@@ -88,6 +88,7 @@ public class GazeTrail : MonoBehaviourPunCallbacks
 
         Vector3 GazeDirectionCombined = Camera.main.transform.TransformDirection(GazeDirectionCombinedLocal);
         transform.position = Camera.main.transform.position + GazeDirectionCombined * distance + offset;
+        SetGazeColor(Color.blue);
 
 
 
