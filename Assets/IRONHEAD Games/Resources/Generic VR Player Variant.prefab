@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 199841156054599878, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: -4481647036808409198}
+    - target: {fileID: 2339911655058509809, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2682015117141561006, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
       propertyPath: m_Name
       value: Generic VR Player Variant
@@ -56,6 +64,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2682015117141561006, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4481647036808409198}
     - targetCorrespondingSourceObject: {fileID: 8462527475252422827, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7847084302650871957}
@@ -162,3 +173,24 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &6323590245219920819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2682015117141561006, guid: bc0ad7153ba244e4a91f82cd7fcd03e3, type: 3}
+  m_PrefabInstance: {fileID: 8284804004803126557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4481647036808409198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323590245219920819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
