@@ -780,6 +780,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "One Modifier",
+                    "id": "eb4314ec-b163-4d89-8ee5-64e72dcfbdbe",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Modifier",
+                    "id": "5cb840ef-2a42-49a8-af94-4e21da8a7481",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Binding",
+                    "id": "9d9a783a-07cd-4796-8c69-b856dc2acea1",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "62690862-4688-4010-975b-b3d9c6062157",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
@@ -947,7 +980,7 @@
                 {
                     "name": "up",
                     "id": "2b466c01-134f-40f2-b376-f7e9684e423b",
-                    "path": "",
+                    "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -958,7 +991,7 @@
                 {
                     "name": "down",
                     "id": "79757cb3-5b81-4a3d-bc3c-d2582f85d5db",
-                    "path": "",
+                    "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",

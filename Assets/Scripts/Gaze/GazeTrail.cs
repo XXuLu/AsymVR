@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using ViveSR.anipal.Eye;
+using Tobii.Gaming;
 
 
 public class GazeTrail : MonoBehaviourPunCallbacks
@@ -16,6 +17,8 @@ public class GazeTrail : MonoBehaviourPunCallbacks
     private bool eye_callback_registered = false;
 
     private PhotonView _photonView;
+
+    Vector2 screenPosition;
 
 
     private void Awake()
@@ -38,13 +41,22 @@ public class GazeTrail : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (_photonView.IsMine&&SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.WORKING && SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.NOT_SUPPORT)
+        if (_photonView.IsMine && SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.WORKING && SRanipal_Eye_Framework.Status != SRanipal_Eye_Framework.FrameworkStatus.NOT_SUPPORT)
 
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 newPos = ray.GetPoint(distance);
-            transform.position = newPos + offset;
-            SetGazeColor(Color.red);
+            
+            GazePoint gazePoint = TobiiAPI.GetGazePoint();
+            if (gazePoint.IsValid)
+            {
+                Vector2 screenPosition = gazePoint.Screen;
+                Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+                Vector3 newPos = ray.GetPoint(distance);
+
+                transform.position = newPos + offset;
+                SetGazeColor(Color.red);
+
+            }
+            
             return;
             
         }

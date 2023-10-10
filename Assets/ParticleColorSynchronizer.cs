@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class ParticleColorSynchronizer : MonoBehaviour, IPunObservable
+public class ParticleColorSynchronizer : MonoBehaviourPunCallbacks, IPunObservable
 {
     private List<ParticleSystem> particleSystems = new List<ParticleSystem>();
 
