@@ -71,9 +71,9 @@ public class GazeTrail : MonoBehaviourPunCallbacks
             SRanipal_Eye_v2.WrapperUnRegisterEyeDataCallback(Marshal.GetFunctionPointerForDelegate((SRanipal_Eye_v2.CallbackBasic)EyeCallback));
             eye_callback_registered = false;
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            /*Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 newPosition = ray.GetPoint(distance);
-            transform.position = newPosition + offset;
+            transform.position = newPosition + offset;*/
 
             
 
