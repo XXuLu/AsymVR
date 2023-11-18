@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.tobii.gaming.sdk": {
-      "version": "file:E:/luxu/毕业设计/tobii",
+      "version": "file:../Assets/tobiidesktop",
       "depth": 0,
       "source": "local",
       "dependencies": {}
