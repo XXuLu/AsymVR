@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.tobii.gaming.sdk": {
-      "version": "file:../Assets/tobiidesktop",
+      "version": "file:../TobiiUnitySDK",
       "depth": 0,
       "source": "local",
       "dependencies": {}
