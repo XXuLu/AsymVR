@@ -13888,7 +13888,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PcPlayerPrefab: {fileID: 3489039394854948350, guid: 044dff99d8c047e4aaf24a909806affa, type: 3}
   VrPlayerPrefab: {fileID: 5015173333203865709, guid: 5bddb018d327e444fad3204842e7094d, type: 3}
-  sRanipal_Eye_Framework: {fileID: 1277252655}
   spawnPosition: {x: -1, y: 0, z: 7}
 --- !u!1 &971088938
 GameObject:
@@ -16016,7 +16015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!120 &1132229849
 LineRenderer:
   serializedVersion: 2
@@ -18185,17 +18184,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4879914434278830, guid: f676e25d0fcd1ec4fa22af3017316de9, type: 3}
   m_PrefabInstance: {fileID: 1277252653}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1277252655 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114214629311031788, guid: f676e25d0fcd1ec4fa22af3017316de9, type: 3}
-  m_PrefabInstance: {fileID: 1277252653}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47613961cde0a8b4aa4f79219b7e523c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1284313819
 PrefabInstance:
   m_ObjectHideFlags: 0
