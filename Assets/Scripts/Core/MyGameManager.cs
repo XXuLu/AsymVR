@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class MyGameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static MyGameManager Instance { get; private set; }
 
     public bool IsVRPlayer { get; set; }
 

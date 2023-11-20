@@ -21,7 +21,7 @@ public class PlayerTypeToggle : MonoBehaviour
     {
         if (changedToggle.isOn)
         {
-            GameManager.Instance.IsVRPlayer = isVR;
+            MyGameManager.Instance.IsVRPlayer = isVR;
             Debug.Log("Is VR Player: " + isVR);
 
             // 更新另一个Toggle的状态
