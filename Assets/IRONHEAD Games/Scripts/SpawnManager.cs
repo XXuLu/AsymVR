@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] GameObject VrPlayerPrefab;
 
     //public SRanipal_Eye_Framework sRanipal_Eye_Framework;
-    bool isXREnabled = XRSettings.isDeviceActive;
+    //bool isXREnabled = XRSettings.isDeviceActive;
 
 
 
@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
 
         if (PhotonNetwork.IsConnectedAndReady)
         {
-            if(isXREnabled)
+            if(GameManager.Instance.IsVRPlayer == true)
             PhotonNetwork.Instantiate(VrPlayerPrefab.name,spawnPosition,Quaternion.identity);
             else
             {
