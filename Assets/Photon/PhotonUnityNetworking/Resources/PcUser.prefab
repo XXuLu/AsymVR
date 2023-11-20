@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 418749910715105942}
   - component: {fileID: 2060968138711593807}
   - component: {fileID: -8318458363843390195}
+  - component: {fileID: 7365659136387051586}
   - component: {fileID: 2523269090618362395}
   m_Layer: 0
   m_Name: PcUser
@@ -53,7 +54,7 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 0
+  observableSearch: 2
   ObservedComponents:
   - {fileID: -8318458363843390195}
   sceneViewId: 0
@@ -75,6 +76,21 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &7365659136387051586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3489039394854948350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a325915c405096d429680b66b3d38d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 6489490995940285779}
+  controlScripts:
+  - {fileID: 2523269090618362395}
 --- !u!114 &2523269090618362395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,5 +250,10 @@ PrefabInstance:
 --- !u!4 &2228698786015403583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5798973860700166043, guid: 3dea1a7a927522d4bb9b8601f568598a, type: 3}
+  m_PrefabInstance: {fileID: 5663265245838559652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &6489490995940285779 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1484138463813440759, guid: 3dea1a7a927522d4bb9b8601f568598a, type: 3}
   m_PrefabInstance: {fileID: 5663265245838559652}
   m_PrefabAsset: {fileID: 0}

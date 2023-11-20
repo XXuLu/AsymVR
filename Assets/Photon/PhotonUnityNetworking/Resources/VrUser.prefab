@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6966660884150060748}
   - component: {fileID: 1198810410157930385}
   - component: {fileID: 7725976456030129815}
+  - component: {fileID: 3478458333025207368}
   m_Layer: 0
   m_Name: VrUser
   m_TagString: Untagged
@@ -74,6 +75,20 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &3478458333025207368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015173333203865709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a325915c405096d429680b66b3d38d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 3573941836384562645}
+  controlScripts: []
 --- !u!1 &6386564529771767080
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +185,11 @@ PrefabInstance:
 --- !u!4 &2760240069993804940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 3573941837042211490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &3573941836384562645 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 3573941837042211490}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4443760467599165348
