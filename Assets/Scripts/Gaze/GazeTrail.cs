@@ -53,7 +53,7 @@ public class GazeTrail : MonoBehaviourPunCallbacks
                 Vector3 newPos = ray.GetPoint(distance);
 
                 transform.position = newPos + offset;
-                SetGazeColor(Color.red);
+                //SetGazeColor(Color.red);
 
             }
             
