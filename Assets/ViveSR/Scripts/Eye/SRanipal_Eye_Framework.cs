@@ -25,7 +25,7 @@ namespace ViveSR
                 /// <summary>
                 /// Whether to enable anipal's Eye module.
                 /// </summary>
-                public bool EnableEye = true;
+                public  bool EnableEye = true;
 
                 /// <summary>
                 /// Whether to use callback to get data.
