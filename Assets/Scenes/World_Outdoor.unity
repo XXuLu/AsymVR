@@ -13886,7 +13886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43722cd748c289843a8001caf498bb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GenericVRPlayerPrefab: {fileID: 3489039394854948350, guid: 044dff99d8c047e4aaf24a909806affa, type: 3}
+  PcPlayerPrefab: {fileID: 3489039394854948350, guid: 044dff99d8c047e4aaf24a909806affa, type: 3}
+  VrPlayerPrefab: {fileID: 5015173333203865709, guid: 5bddb018d327e444fad3204842e7094d, type: 3}
   sRanipal_Eye_Framework: {fileID: 1277252655}
   spawnPosition: {x: -1, y: 0, z: 7}
 --- !u!1 &971088938
