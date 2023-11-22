@@ -3,15 +3,19 @@ using Photon.Pun;
 
 public class UserNetwork : MonoBehaviourPunCallbacks
 {
-    public Camera playerCamera;
+    public GameObject playerCamera;
     public MonoBehaviour[] controlScripts;
 
     void Start()
     {
-        // 如果PhotonView不属于本地玩家，则禁用相机和控制脚本
-        if (!photonView.IsMine)
+        if (photonView.IsMine)
         {
-            playerCamera.enabled = false;
+            playerCamera.SetActive(true);
+        }
+        // 如果PhotonView不属于本地玩家，则禁用相机和控制脚本
+        else
+        {
+            playerCamera.SetActive(false);
 
             foreach (var script in controlScripts)
             {
